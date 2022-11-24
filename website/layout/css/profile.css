@@ -1,0 +1,90 @@
+:root {
+    --main-color-1: #FF9999;
+    --main-color-2: #FFC8C8;
+    --main-color-3: rgb(255, 104, 104);
+    --black-color: #3E4149;
+    --black-2-color: #444F5A;
+    --white-color: #fafafa;
+}
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.profile-nav {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    position: relative;
+    background-color: var(--white-color);
+}
+.profile-nav > .my-data {
+    position: sticky;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.my-data > img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color-1);
+}
+.profile-nav > ul {
+    position: sticky;
+    top: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+/* info section  */
+.info-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: wrap;
+}
+.info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info-row {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    color: var(--black-2-color);
+}
+.info-row > .value {
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 7px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 10px;
+    width: 300px;
+    outline: none;
+    color: var(--main-color-1);
+
+}
+.info-row > .value:focus {
+    border: 1px solid var(--main-color-1);
+}
+.submit-field {
+    margin: 10px;
+}
+.submit-field > .submitBtn {
+    margin: 0 auto;
+    background-color: var(--main-color-3);
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: var(--white-color);
+}

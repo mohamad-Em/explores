@@ -1,0 +1,123 @@
+:root {
+    --main-color-1: #FF9999;
+    --main-color-2: #FFC8C8;
+    --main-color-3: rgb(255, 104, 104);
+    --black-color: #3E4149;
+    --black-2-color: #444F5A;
+    --white-color: #fafafa;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.form {
+    border-radius: 20px;
+    padding: 30px;
+    background: var(--black-2-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+}
+.form-title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.hz-form {
+    width: 700px;
+}
+.input-field {
+    width: 100%;
+    margin-top: 5px;
+}
+.input-field-label {
+    color: var(--white-color);
+}
+.input-field .text-input,
+.input-field .pass-input,
+.input-field select,
+.input-field textarea,
+.submit-field .submit-btn {
+    margin-top: 3px;
+    width: 100%;
+    padding: 8px 20px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    color: var(--black-2-color);
+    background-color: var(--main-color-2);
+    resize: none;
+}
+.input-field input:focus,
+.input-field select:focus {
+    box-shadow: 0 0 15px var(--main-color-2);
+}
+.input-field > .radios {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: var(--white-color);
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    background-color: var(--main-color-2);
+}
+.input-field > .radios > input:focus {
+    box-shadow: 0 0 15px rgb(102, 102, 224);
+    
+}
+.submit-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.submit-field > .submit-btn {
+    text-align: center;
+    width: 120px;
+    font-size: 1.3rem;
+    padding: 5px 0;
+}
+.submit-field a {
+    color: var(--main-color-3);
+}
+.field {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+}
+.input-field input::-webkit-file-upload-button {
+    background: transparent;
+    border: none;
+    border-left: 3px solid var(--main-color-3);
+}
+.hz-form > .input-field > h4,
+.hz-form > .input-field > p {
+    color: var(--white-color);
+}
+
+@media (max-width: 768px) {
+    .form-desc {
+        display: none;
+    }
+    .hz-form {
+        width: 350px;
+    }
+    .field {
+        flex-direction: column;
+        gap: 2px;
+    }
+    .input-field input,
+    .input-field select,
+    .submit-field .submit-btn {
+        padding: 4px 10px;
+    }
+}
